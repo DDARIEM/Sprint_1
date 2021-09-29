@@ -2,97 +2,135 @@
 <html lang="es">
     <head>
         <title>IMC UNAB G9</title>
+        <meta charset="utf-8">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="estilos/estilos.css" />
     </head>
     <body background="image/body.jpg">
-        <table border="5">
-            <tr>
-                <th bgcolor="white" width="1500px" height="80px" style="color: blue; font-family:monospace; font-size: 40px;">Indice de masa corporal</th>
-            </tr>
-        </table>
+        <div class="container-fluid">
+            <div class="row">
+                <div class="prueba col-md-2">grupo 9</div>
+                <div class="col-md-9 b">
+                    <h3 class="a">Indice de Masa Corporal </h3>
+                </div>
+                <div class="col-md-1">
+                    <img src="image/mision.png" height="120px" class="my-3">
+                </div>
+            </div>
+        </div>
         <br>
-        <br>    
-        <center>
-            <p style="color: white;font-size: 25px;">Por favor ingrese los siguientes datos:</p>
+        <div class="contenedor" style="background-color:black;border: 2px white solid;">
+            <h4><a class="btn btn-link" href="IMC.html">Registro</a></h4>
+            <h4><a class="btn btn-link">Resultados</a></h4>
+        </div>
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-md-1"></div>
+                <div class="col-md-11" style="color: white;font-size: 20px;">Por favor ingrese los siguientes datos:</div>
+            </div>
+            <br>
             <form>
-                <table width="450px" height="370px" bgcolor="white">
-                    <tr>
-                        <th width="100px" align="right" style="color: blue;">Fecha:</th> 
-                        <td><input type="date" id="fecha" name="fecha"></td>
-                    </tr>
-                    <tr>
-                        <th width="100px" align="right" style="color: blue;">Nombre:</th> 
-                        <td><input type="text" style="width: 300px;" placeholder="Ingrese su nombre" id="nombre" name="nombre"></td>
-                    </tr>
-                    <tr>
-                        <th align="right" style="color: blue;">Apellido:</th> 
-                        <td><input type="text" style="width: 300px;" placeholder="Ingrese su apellido" id="apellido" name="apellido" ></td>
-                    </tr>
-                    <tr>
-                        <th align="right" style="color: blue;">Telefono:</th> 
-                        <td><input type="tel" style="width: 200px;" placeholder="Ingrese su telefono" id="tel" name="tel"></td>
-                    </tr>
-                    <tr>
-                        <th align="right" style="color: blue;">Correo:</th> 
-                        <td><input type="email" style="width: 300px;" placeholder="usuario@example.com" id="correo" name="correo"></td>
-                    </tr>
-                    <tr>
-                        <th align="right" style="color: blue;" c>Facultad:</th> 
-                        <td>
-                            <select name="facultad"style="width: 310px;" id="facultad" required>
-                                <option value="">Eliga una opción</option>
-                                <option value="1">Facultad de Ciencias Económicas, Administrativas y Contables</option> 
-                                <option value="2">Facultad de Ciencias de la Salud</option> 
-                                <option value="3">Facultad de Ciencias Sociales, Humanidades y Artes</option>
-                                <option value="4">Facultad de Ciencias Jurídicas y Políticas</option> 
-                                <option value="5">Facultad de Ingeniería</option> 
-                             </select>
-                        </td>
-                    </tr>
-                    <tr>
-                        <th align="right" style="color: blue;" c>Programa:</th> 
-                        <td>
-                            <select  name="programa"style="width: 310px;" id="programa" required>
-                                <option value="">Eliga una opción</option>
-                                <option value="1">Administración de Empresas - Profesional - Presencial</option> 
-                                <option value="2">Contaduría Pública - Profesional - Presencial</option> 
-                                <option value="3">Negocios Internacionales - Profesional - Presencial</option>
-                                <option value="4">Administración Turística y Hotelera - Profesional - Presencial</option> 
-                                <option value="5">Economía - Profesional - Presencial</option> 
-                                <option value="6">Enfermería - Profesional - Presencial </option>
-                                <option value="7">Psicología - Profesional - Presencial</option>
-                                <option value="8">Medicina - Profesional - Presencial</option>
-                                <option value="9">Psicología Convenio: Unisangil - Profesional - Presencial - Sede San Gil</option>
-                                <option value="10">Artes Audiovisuales - Profesional - Presencial</option>
-                                <option value="11">Gastronomía y Alta Cocina - Profesional - Presencial</option>
-                                <option value="12">Música - Profesional - Presencial</option>
-                                <option value="13">Comunicación Social - Profesional - Presencial</option>
-                                <option value="14">Licenciatura en Educación Infantil - Profesional - Presencial</option>
-                                <option value="15">Derecho - Convenio: Unisangil - Profesional - Presencial - Sede El Yopal</option>
-                                <option value="16">Derecho - Profesional - Presencial</option>
-                                <option value="17">Ingeniería Biomédica - Profesional - Presencial</option>
-                                <option value="18">Ingeniería de Sistemas - Profesional - Presencial</option>
-                                <option value="19">Ingeniería Financiera - Convenio: Unisangil - Profesional - Presencial - Sede San Gil</option>
-                                <option value="20">Ingeniería Industrial - Profesional - Presencial</option>
-                                <option value="21">Ingeniería de Mercados - Profesional - Presencial</option>
-                                <option value="22">Ingeniería en Energía - Profesional - Presencial</option>
-                                <option value="23">Ingeniería Financiera - Profesional - Presencial</option>
-                                <option value="24">Ingeniería Mecatrónica - Profesional - Presencial</option>
-                             </select>
-                        </td>
-                    </tr>
-                    <tr>
-                        <th align="right" style="color: blue;">Peso(kg):</th> 
-                        <td><input type="number" style="width: 100px;" id="peso" name="peso" step="0.1" placeholder="0.0 kg" min="10.0" max="300"></td>
-                    </tr>                    
-                    <tr>
-                        <th align="right" style="color: blue;">Talla(cm):</th> 
-                        <td><input type="number" style="width: 100px;" id="talla" name="talla" step="1"  placeholder="0 cm" min="50" max="280"></td>
-                    </tr>
-                </table>
+                <div class="row">
+                    <div class="col-md-2"></div>
+                    <div class="col-md-3">
+                        <label class="form-label" for="fecha">Fecha:</label>
+                        <input type="date"class="form-control" id="fecha" aria-describedby="Fecha">
+                    </div>
+                </div>  
+                <div class="row">
+                    <div class="col-md-2"></div>
+                    <div class="col-md-4">
+                        <label class="form-label" for="nombre">Nombre:</label>
+                        <input type="text" class="form-control" id="nombre" aria-describedby="nombre" placeholder="Ingrese su nombre">
+                    </div>
+                    <div class="col-md-4">
+                        <label class="form-label" for="apellido">Apellido:</label>
+                        <input type="text" class="form-control" id="apellido" aria-describedby="apellido" placeholder="Ingrese su apellido" >
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-2"></div>
+                    <div class="col-md-4">
+                        <label class="form-label" for="telefono">Telefono:</label>
+                        <input type="tel" class="form-control" id="telefono" aria-describedby="telefono" placeholder="Ingrese su telefono">
+                    </div>
+                    <div class="col-md-5">
+                        <label class="form-label" for="correo">Correo:</label>
+                        <div class="input-group">
+                            <input type="text" class="form-control" placeholder="Ingrese usuario institucional" aria-label="correo" aria-describedby="correo">
+                            <span class="input-group-text" id="correo">@unab.edu.co</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-2"></div>
+                    <div class="col-md-4">
+                        <label  class="form-label" for="nombre">Facultad:</label>
+                        <select class ="form-select"name="facultad" id="facultad" required>
+                            <option value="">Eliga una opción</option>
+                            <option value="1">Facultad de Ciencias Económicas, Administrativas y Contables</option> 
+                            <option value="2">Facultad de Ciencias de la Salud</option> 
+                            <option value="3">Facultad de Ciencias Sociales, Humanidades y Artes</option>
+                            <option value="4">Facultad de Ciencias Jurídicas y Políticas</option> 
+                            <option value="5">Facultad de Ingeniería</option> 
+                         </select>
+                    </div>
+                    <div class="col-md-4">
+                        <label class="form-label" for="apellido">Programa:</label>
+                        <select  class="form-select" name="programa"style="width: 310px;" id="programa" required>
+                            <option value="">Eliga una opción</option>
+                            <option value="1">Administración de Empresas - Profesional - Presencial</option> 
+                            <option value="2">Contaduría Pública - Profesional - Presencial</option> 
+                            <option value="3">Negocios Internacionales - Profesional - Presencial</option>
+                            <option value="4">Administración Turística y Hotelera - Profesional - Presencial</option> 
+                            <option value="5">Economía - Profesional - Presencial</option> 
+                            <option value="6">Enfermería - Profesional - Presencial </option>
+                            <option value="7">Psicología - Profesional - Presencial</option>
+                            <option value="8">Medicina - Profesional - Presencial</option>
+                            <option value="9">Psicología Convenio: Unisangil - Profesional - Presencial - Sede San Gil</option>
+                            <option value="10">Artes Audiovisuales - Profesional - Presencial</option>
+                            <option value="11">Gastronomía y Alta Cocina - Profesional - Presencial</option>
+                            <option value="12">Música - Profesional - Presencial</option>
+                            <option value="13">Comunicación Social - Profesional - Presencial</option>
+                            <option value="14">Licenciatura en Educación Infantil - Profesional - Presencial</option>
+                            <option value="15">Derecho - Convenio: Unisangil - Profesional - Presencial - Sede El Yopal</option>
+                            <option value="16">Derecho - Profesional - Presencial</option>
+                            <option value="17">Ingeniería Biomédica - Profesional - Presencial</option>
+                            <option value="18">Ingeniería de Sistemas - Profesional - Presencial</option>
+                            <option value="19">Ingeniería Financiera - Convenio: Unisangil - Profesional - Presencial - Sede San Gil</option>
+                            <option value="20">Ingeniería Industrial - Profesional - Presencial</option>
+                            <option value="21">Ingeniería de Mercados - Profesional - Presencial</option>
+                            <option value="22">Ingeniería en Energía - Profesional - Presencial</option>
+                            <option value="23">Ingeniería Financiera - Profesional - Presencial</option>
+                            <option value="24">Ingeniería Mecatrónica - Profesional - Presencial</option>
+                         </select>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-2"></div>
+                    <div class="col-md-4">
+                        <label class="form-label" for="peso">Peso(kg):</label>
+                        <input type="number" class="form-control" id="peso" aria-describedby="peso" step="0.1" placeholder="0.0 kg" min="10.0" max="300">
+                    </div>
+                    <div class="col-md-4">
+                        <label class="form-label" for="talla">Talla(cm):</label>
+                        <input type="number" class="form-control" id="talla" aria-describedby="talla" step="1"  placeholder="0 cm" min="50" max="280">
+                    </div>
+                </div>
                 <br>
-                <input type="reset" name="limpiar" value="Limpiar" style="background-color: black; color: white; width: 90px; height: 35px;">
-                <input type="submit" name="enviar" value="Enviar" style="background-color: black; color: white;width: 90px; height: 35px;"> 
+                <div class="row">
+                    <div class="col-md-2"></div>
+                    <div class="col-md-8 contenedor">
+                        <input class="mx-3 btn btn-success" type="reset" name="limpiar" value="Limpiar" >
+                        <input class="mx-5 btn btn-success" type="submit" name="enviar" value="Enviar"> 
+                    </div>
+                </div>
             </form>
-        </center>
+            <br> 
+        </div>     
+        <div>
+            <p class="b" style="color: white;" >©2021 Universidad Autónoma de Bucaramanga - UNAB | Sujeta a inspección y vigilancia por parte del Ministerio de Educación Nacional. Resolución 3284 (21 diciembre de 1956), Ministerio de Justicia: </p>
+        </div>
     </body>
 </html>
