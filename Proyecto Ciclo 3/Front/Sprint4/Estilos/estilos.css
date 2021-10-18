@@ -1,0 +1,53 @@
+  @keyframes example {
+    0%   {background-color: rgb(217, 136, 128);}
+    10%  {background-color: rgba(195, 155, 211);}
+    20%  {background-color: rgba(127, 179, 213);}
+    30%  {background-color: rgba(118, 215, 196);}
+    40%  {background-color: rgba(125, 206, 160);}
+    50%  {background-color: rgba(130, 224, 170);}
+    60%  {background-color: rgba(247, 220, 111);}
+    70%  {background-color: rgba(248, 196, 113);}
+    80%  {background-color: rgba(240, 178, 122);}
+    90%  {background-color: rgba(229, 152, 102);}
+    100% {background-color: rgb(40, 55, 71);}
+  }
+  .prueba {
+    display: flex;
+    background-color: red;
+    animation-name: example;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-family: 'Roboto', sans-serif;
+    font-size: 20px;
+    width: 150px;
+    height: 150px;
+    border-radius: 50%
+  }
+  label{
+      color: white;
+  }
+  .contenedor{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+h4{
+    padding: 2px;
+    margin-right: 150px;
+}
+
+.a{
+  color:white;
+  font-size: 50px;
+  text-align: center;
+  margin-top: 30px;
+}
+.b{
+  margin-top: 10px;
+  box-sizing: border-box;
+  border: 3px white solid;
+  background-color:black;
+}
